@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_estudiantes">
+
+    <fragment
+        android:id="@+id/nav_estudiantes"
+        android:name="viewEstudiantes"
+        android:label="Galeria Estudiantes"
+        tools:layout="@layout/fragment_view_estudiantes" />
+    <fragment
+        android:id="@+id/nav_delete"
+        android:label="Borrar Estudiante"
+        tools:layout="@layout/fragment_delete_estudiante" />
+    <fragment
+        android:id="@+id/nav_agregar"
+        android:label="Ingresar Estudiante"
+        tools:layout="@layout/fragment_add_estudiante" />
+    <fragment
+        android:id="@+id/nav_search"
+        android:label="Buscar Estudiante"
+        tools:layout="@layout/fragment_search_estudiante" />
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="dgtic.unam.consumoapi.MainActivity"
+        android:label="app_bar_main"
+        tools:layout="@layout/app_bar_main" />
+</navigation>
